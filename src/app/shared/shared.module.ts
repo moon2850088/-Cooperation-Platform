@@ -1,9 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatInputModule, MatFormFieldModule ,
-          MatListModule} from '@angular/material';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import {
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatListModule,
+  MatSlideToggleModule,
+  MatGridListModule,
+  MatDialogModule,
+  MatAutocompleteModule
+} from "@angular/material";
 
 @NgModule({
   declarations: [],
@@ -15,7 +24,11 @@ import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatInp
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule,
+    MatAutocompleteModule
   ],
   exports: [
     CommonModule,
@@ -25,7 +38,11 @@ import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatInp
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatListModule
-  ],
+    MatListModule,
+    MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule,
+    MatAutocompleteModule
+  ]
 })
-export class SharedModule { }
+export class SharedModule {}

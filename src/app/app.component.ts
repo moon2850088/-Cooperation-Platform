@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'taskmgr';
+  darkTheme = false;
+  lightTheme = true;
+  switchTheme(activate){
+    if (this.darkTheme == false){
+    this.darkTheme = activate;
+    this.lightTheme = false;
+    }else {
+      this.lightTheme = activate;
+      this.darkTheme = false;
+    }
+  }
 }

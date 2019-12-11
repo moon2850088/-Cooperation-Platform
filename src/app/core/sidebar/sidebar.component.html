@@ -1,5 +1,24 @@
-<mat-list>
+<mat-nav-list>
     <h3 mat-subheader>project</h3>
+    <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="projects"></mat-icon>
+        <span mat-line>project index</span>
+        <span mat-line mat-subheader>view your all project</span>
+    </mat-list-item>
     <h3 mat-subheader>calendar</h3>
-
-</mat-list>
+    <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="month"></mat-icon>
+        <span mat-line>monthly view</span>
+        <span mat-line mat-subheader>monthly track your task</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="week"></mat-icon>
+        <span mat-line>weekly view</span>
+        <span mat-line mat-subheader>weekly track your task</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon [svgIcon]="today"></mat-icon>
+        <span mat-line>daily view</span>
+        <span mat-line mat-subheader>daily track your task</span>
+    </mat-list-item>
+</mat-nav-list>

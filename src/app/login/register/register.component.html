@@ -1,0 +1,32 @@
+<form>
+    <mat-card >
+        <mat-card-header>
+            <mat-card-title> register: </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field class="full-width">
+                <input matInput type="text" placeholder="your email">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input matInput type="text" placeholder="your name">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input matInput type="text" placeholder="your password">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input matInput type="text" placeholder="comfirm password">
+            </mat-form-field>
+            <mat-grid-list cols="6">
+                <mat-grid-tile *ngFor="let item of items">
+                    <mat-icon class="avatar" [svgIcon]="item"></mat-icon>
+                </mat-grid-tile>
+            </mat-grid-list>
+            <button mat-raised-button type="button" color="warn">register</button>
+        </mat-card-content>
+        
+        <mat-card-actions class="text-right">
+            <p>dont have accont? <a href="">login</a> </p>
+            <p>forget the password?  <a href="">recover</a> </p>
+        </mat-card-actions>
+    </mat-card>
+</form>

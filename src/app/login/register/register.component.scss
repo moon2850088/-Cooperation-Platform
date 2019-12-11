@@ -1,0 +1,25 @@
+mat-icon.avatar {
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+mat-card {
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-right {
+    margin: 10px;
+    text-align: end;
+}
